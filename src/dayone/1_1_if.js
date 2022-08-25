@@ -1,7 +1,3 @@
-/**
- * 1. IF
- */
-
 const grade = '운영자';
 if (grade === '손님'){
     const authority = '글 읽기';
