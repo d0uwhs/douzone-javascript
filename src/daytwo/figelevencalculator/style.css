@@ -1,0 +1,18 @@
+#calculator{
+    width: 200px;
+}
+
+.result{
+    height: 50px;
+    width: 100%;
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn{
+    padding: 1em;
+    background-color: #dbdbdb;
+}
