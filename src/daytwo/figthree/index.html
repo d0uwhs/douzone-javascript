@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>HTML 태그에 접근 테스트</h2>
+    단, 구매자는 태그 이름으로 접근, 상품명은 아이디로 접근, 구매가격은 name값으로 접근할 것
+    <br><br>
+    <label>구매자 : </label>
+    <input type="text" placeholder="구매자의 이름을 입력하세요.">
+    <br>
+    <br>
+    <label>상품명 : </label>
+    <input type="text" id="pname" placeholder="구매 상품명을 입력하세요">
+    <br>
+    <br>
+    <label>가격 : </label>
+    <input type="text" name="price" placeholder="구매 가격을 입력하세요.">
+    <br>
+    <br>
+    <button onclick="printValue();">입력값 출력하기</button>
+    <br>
+    <br>
+    <div id="area"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
