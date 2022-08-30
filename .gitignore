@@ -3,3 +3,5 @@
 
 *.ts
 tsconfig.json
+/src/수업/
+/src/tsc/
