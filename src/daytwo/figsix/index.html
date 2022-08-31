@@ -27,6 +27,32 @@
     <div id="result1"></div>
     <button onclick="arrayTest();"> 전송 및 처리 </button>
   </div>
-  <script src="script.js"></script>
+  <script>
+      function arrayTest(){
+          const la1 = document.getElementById('la1').innerHTML.split(',')
+          const la2 = document.getElementById('la2').innerHTML.split(',')
+          const la3 = document.getElementById('la3').innerHTML.split(',')
+          const la4 = document.getElementById('la4').innerHTML.split(',')
+          const input = document.getElementById('text1').value
+
+          const arrays = []
+
+          for(let item of la1){
+          	arrays.push(item)
+          }
+          for(let item of la2){
+          	arrays.push(item)
+          }
+          for(let item of la3){
+          	arrays.push(item)
+          }
+          for(let item of la4){
+          	arrays.push(item)
+          }
+          if (arrays.includes(input)){
+              alert(arrays.indexOf(input))
+          } else alert("존재하지 않습니다.")
+      }
+  </script>
 </body>
 </html>
