@@ -14,6 +14,14 @@ const timer = () => {
 let timerId;
 const startTimer = () => {
     timerId = setInterval(timer, 500);
+    timer();
+};
+const stopTimer = () => {
+    clearInterval(timerId);
+    timerId = null;
+    hours.innerHTML = 'hh';
+    minutes.innerHTML = 'mm';
+    seconds.innerHTML = 'ss';
 };
 const appendZero = (times) => {
     if (times.length === 1) {

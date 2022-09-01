@@ -32,6 +32,7 @@ const interestRates = document.querySelector('input[name=interest]');
 const originAmount = document.querySelector('span#money-before');
 const matureAmount = document.querySelector('span#money-after');
 const calculateInterest = () => {
+    originAmount.innerHTML = depositAmount.value;
     const result = parseInt(depositAmount.value) + ((parseInt(depositAmount.value) * (parseInt(interestRates.value) / 100)) * parseInt(depositDate.value));
     matureAmount.innerHTML = result.toString();
 };
