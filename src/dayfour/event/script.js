@@ -57,3 +57,11 @@ textArea.addEventListener('blur', () => {
     }
     textArea.replaceWith(viewBox);
 });
+textArea.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        if (viewBox === null || viewBox === void 0 ? void 0 : viewBox.innerHTML) {
+            viewBox.innerHTML = textArea.value;
+        }
+        textArea.replaceWith(viewBox);
+    }
+});

@@ -56,9 +56,9 @@ for (let word of words) {
         console.log("Good");
     }
 }
-const arr = ['1080px', '$100', '+200', '60kg', '6m', '-15'];
+const stringArrays = ['1080px', '$100', '+200', '60kg', '6m', '-15'];
 const removeStr = /^[$+]|px$|kg$|m$/;
-let returnDirect = arr.map((item) => item.replace(removeStr, ""));
+let returnDirect = stringArrays.map((item) => item.replace(removeStr, ""));
 console.log(returnDirect);
 const list = ['기러기', '토마토', '스위스', '인도인', '별똥별', '유재석'];
 const palindrom = (item) => {
